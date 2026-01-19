@@ -14,8 +14,7 @@ TEAM - Solo (Team Name - EngineerWork)
 - Categorized features based on learning behavior  
 - Completed initial data exploration and observations  
 
-### Phase 3 – Day 3
-## Next Steps
+### Phase 3 – Day
 - Data preprocessing and encoding  
 - Baseline machine learning models  
 - Learning pattern clustering and explainability  
