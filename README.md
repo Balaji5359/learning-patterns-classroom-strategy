@@ -14,9 +14,16 @@ TEAM - Solo (Team Name - EngineerWork)
 - Categorized features based on learning behavior  
 - Completed initial data exploration and observations  
 
-### Phase 3 – Day
+### Phase 3 – Day 3
 - Data preprocessing and encoding  
 - Baseline machine learning models  
 - Learning pattern clustering and explainability  
 - Strategy recommendation logic  
+
+### Phase 3 – Day 4
+- Performed learning pattern discovery using clustering techniques
+- Identified meaningful student learning groups based on academic, engagement, and behavioral features
+- Added interpretability to explain why students belong to specific learning patterns
+- Visualized learning clusters to support classroom-level insights
+- Designed initial strategy recommendation logic aligned to identified learning patterns
 
