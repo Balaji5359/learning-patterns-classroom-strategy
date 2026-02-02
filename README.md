@@ -37,7 +37,7 @@ TEAM - Solo (Team Name - EngineerWork)
 ### Phase 5 - Day 6
 - Made a plan to build small dashboard
 - Having:
-  Show student data
-  Show learning cluster
-  Show risk level
-  Show teacher recommendation
+  - Show student data
+  - Show learning cluster
+  - Show risk level
+  - Show teacher recommendation
