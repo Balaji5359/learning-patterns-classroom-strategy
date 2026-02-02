@@ -33,3 +33,11 @@ TEAM - Solo (Team Name - EngineerWork)
  - Designed actionable teaching strategies for each learning pattern
  - Implemented early warning logic for disengagement detection
  - Connected ML outputs to classroom decision-making flow
+
+### Phase 5 - Day 6
+- Made a plan to build small dashboard
+- Having:
+  Show student data
+  Show learning cluster
+  Show risk level
+  Show teacher recommendation
