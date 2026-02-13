@@ -1,4 +1,6 @@
+import matplotlib.pyplot as plt
 import pandas as pd
+import seaborn as sns
 import streamlit as st
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import LabelEncoder, StandardScaler
@@ -62,6 +64,28 @@ def prepare_data(path: str) -> pd.DataFrame:
     return df_model
 
 
+def plot_risk_distribution(df: pd.DataFrame) -> plt.Figure:
+    fig, ax = plt.subplots(figsize=(6, 4))
+    risk_order = ["High Risk", "Medium Risk", "Low Risk"]
+    sns.countplot(data=df, x="risk", order=risk_order, palette=["#d62728", "#ff8c00", "#2ca02c"], ax=ax)
+    ax.set_title("Risk Distribution")
+    ax.set_xlabel("Risk Level")
+    ax.set_ylabel("Student Count")
+    plt.xticks(rotation=0)
+    fig.tight_layout()
+    return fig
+
+
+def plot_cluster_distribution(df: pd.DataFrame) -> plt.Figure:
+    fig, ax = plt.subplots(figsize=(6, 4))
+    sns.countplot(data=df, x="learning_cluster", palette="Blues", ax=ax)
+    ax.set_title("Cluster Distribution")
+    ax.set_xlabel("Learning Cluster")
+    ax.set_ylabel("Student Count")
+    fig.tight_layout()
+    return fig
+
+
 df = prepare_data(DATA_PATH)
 
 st.sidebar.header("Student Selection")
@@ -90,3 +114,12 @@ with right:
     )
     st.write("Teacher Recommendation")
     st.info(teacher_recommendation(risk))
+
+st.subheader("Class-Level Overview")
+chart_left, chart_right = st.columns(2)
+
+with chart_left:
+    st.pyplot(plot_risk_distribution(df))
+
+with chart_right:
+    st.pyplot(plot_cluster_distribution(df))
