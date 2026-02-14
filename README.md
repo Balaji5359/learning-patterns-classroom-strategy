@@ -73,3 +73,8 @@ It can operate as a decision-support system to improve student engagement and re
 - Predictions are based on historical data and may not capture personal context.
 - Continuous evaluation is required to prevent bias.
 - Human oversight is mandatory for intervention decisions.
+
+## Dashboard Preview
+
+![Student View](images/student_view.png)
+![Class Overview](images/class_view.png)
