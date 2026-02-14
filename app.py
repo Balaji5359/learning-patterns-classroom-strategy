@@ -8,9 +8,14 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 st.set_page_config(page_title="Learning Patterns Dashboard", layout="wide")
 
 st.title("Learning Patterns & Risk Dashboard")
-st.write("Minimal interactive dashboard for student-level and classroom insights.")
+st.write("This system provides interpretable learning pattern and risk insights for educators.")
 
 DATA_PATH = "dataset/student_data.csv"
+CLUSTER_NAMES = {
+    0: "Consistent Learner",
+    1: "Moderate Learner",
+    2: "At-Risk Learner",
+}
 
 
 def risk_label(g3: float) -> str:
@@ -60,6 +65,7 @@ def prepare_data(path: str) -> pd.DataFrame:
 
     kmeans = KMeans(n_clusters=3, random_state=42)
     df_model["learning_cluster"] = kmeans.fit_predict(x_scaled)
+    df_model["learning_cluster_name"] = df_model["learning_cluster"].map(CLUSTER_NAMES)
 
     return df_model
 
@@ -78,12 +84,17 @@ def plot_risk_distribution(df: pd.DataFrame) -> plt.Figure:
 
 def plot_cluster_distribution(df: pd.DataFrame) -> plt.Figure:
     fig, ax = plt.subplots(figsize=(6, 4))
-    sns.countplot(data=df, x="learning_cluster", palette="Blues", ax=ax)
+    sns.countplot(data=df, x="learning_cluster_name", palette="Blues", ax=ax)
     ax.set_title("Cluster Distribution")
     ax.set_xlabel("Learning Cluster")
     ax.set_ylabel("Student Count")
+    ax.tick_params(axis="x", rotation=15)
     fig.tight_layout()
     return fig
+
+
+def risk_pct(df: pd.DataFrame, label: str) -> float:
+    return (df["risk"].eq(label).sum() / len(df)) * 100
 
 
 df = prepare_data(DATA_PATH)
@@ -102,8 +113,10 @@ with left:
     col3.metric("Failures", int(student["failures"]))
 
     col4, col5 = st.columns(2)
-    col4.metric("Learning Cluster", int(student["learning_cluster"]))
+    col4.metric("Learning Cluster", student["learning_cluster_name"])
     col5.metric("Risk Level", student["risk"])
+
+    st.caption("Cluster indicates learning behavior pattern identified via unsupervised learning.")
 
 with right:
     risk = student["risk"]
@@ -116,6 +129,12 @@ with right:
     st.info(teacher_recommendation(risk))
 
 st.subheader("Class-Level Overview")
+metric_col1, metric_col2, metric_col3, metric_col4 = st.columns(4)
+metric_col1.metric("Total Students", len(df))
+metric_col2.metric("% High Risk", f"{risk_pct(df, 'High Risk'):.1f}%")
+metric_col3.metric("% Medium Risk", f"{risk_pct(df, 'Medium Risk'):.1f}%")
+metric_col4.metric("% Low Risk", f"{risk_pct(df, 'Low Risk'):.1f}%")
+
 chart_left, chart_right = st.columns(2)
 
 with chart_left:
