@@ -79,6 +79,13 @@ It can operate as a decision-support system to improve student engagement and re
 ![Student View](images/student_view.png)
 ![Class Overview](images/class_view.png)
 
+## Day 7 Progress - Streamlit Dashboard Implementation
+
+- Designed and implemented minimal Streamlit dashboard
+- Integrated clustering logic into dashboard
+- Integrated risk prediction logic
+- Added student-level interactive insights
+
 ## Day 8 Progress
 
 - Dashboard refined for cleaner demo and submission readiness
