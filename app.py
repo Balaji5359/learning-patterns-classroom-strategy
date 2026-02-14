@@ -103,7 +103,7 @@ st.sidebar.header("Student Selection")
 student_index = st.sidebar.slider("Select student index", 0, len(df) - 1, 0)
 student = df.iloc[student_index]
 
-st.subheader("Student Snapshot")
+st.subheader("Individual Student Data")
 left, right = st.columns(2)
 
 with left:

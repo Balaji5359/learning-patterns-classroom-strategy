@@ -78,3 +78,17 @@ It can operate as a decision-support system to improve student engagement and re
 
 ![Student View](images/student_view.png)
 ![Class Overview](images/class_view.png)
+
+## Day 8 Progress
+
+- Dashboard refined for cleaner demo and submission readiness
+- Class summary metrics highlighted for faster judge interpretation
+- No new ML models introduced; existing pipeline preserved
+- Documentation updated for progress tracking and clarity
+
+### Class-Level Overview Snapshot
+
+- Total Students: 6395
+- % High Risk: 39.7%
+- % Medium Risk: 24.0%
+- % Low Risk: 36.3%
