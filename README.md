@@ -41,3 +41,19 @@ TEAM - Solo (Team Name - EngineerWork)
   - Show learning cluster
   - Show risk level
   - Show teacher recommendation
+
+## System Architecture
+
+Student Data (CSV)
+?
+Data Preprocessing & Encoding
+?
+Clustering (Learning Pattern Identification)
+?
+Risk Classification
+?
+Explainability Layer
+?
+Teacher Strategy Recommendation
+?
+Interactive Dashboard (Streamlit)
