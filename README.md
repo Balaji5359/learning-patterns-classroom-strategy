@@ -57,3 +57,12 @@ Explainability Layer
 Teacher Strategy Recommendation
 ?
 Interactive Dashboard (Streamlit)
+
+## Business Feasibility
+
+This prototype can be integrated into:
+- School ERP systems
+- Learning Management Systems
+- Institutional analytics dashboards
+
+It can operate as a decision-support system to improve student engagement and reduce academic risk through early intervention.
