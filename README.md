@@ -66,3 +66,10 @@ This prototype can be integrated into:
 - Institutional analytics dashboards
 
 It can operate as a decision-support system to improve student engagement and reduce academic risk through early intervention.
+
+## Ethical Considerations
+
+- The system provides advisory insights, not final decisions.
+- Predictions are based on historical data and may not capture personal context.
+- Continuous evaluation is required to prevent bias.
+- Human oversight is mandatory for intervention decisions.
