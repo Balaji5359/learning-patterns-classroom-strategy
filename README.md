@@ -99,3 +99,18 @@ It can operate as a decision-support system to improve student engagement and re
 - % High Risk: 39.7%
 - % Medium Risk: 24.0%
 - % Low Risk: 36.3%
+## Live Deployment
+
+The Learning Patterns & Risk Dashboard is deployed on AWS EC2.
+
+Live URL:
+http://13.127.239.15:8501
+
+Deployment Details:
+- AWS EC2 (Ubuntu 22.04)
+- Python Virtual Environment
+- Streamlit Application Server
+- Port 8501 exposed via Security Group
+
+The system is now publicly accessible and cloud-hosted.
+
