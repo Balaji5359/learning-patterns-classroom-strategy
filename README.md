@@ -99,7 +99,7 @@ It can operate as a decision-support system to improve student engagement and re
 - % High Risk: 39.7%
 - % Medium Risk: 24.0%
 - % Low Risk: 36.3%
-## Live Deployment
+## Day 9 Progress - Live Deployment
 
 The Learning Patterns & Risk Dashboard is deployed on AWS EC2.
 
