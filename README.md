@@ -45,17 +45,17 @@ TEAM - Solo (Team Name - EngineerWork)
 ## System Architecture
 
 Student Data (CSV)
-?
+|
 Data Preprocessing & Encoding
-?
+|
 Clustering (Learning Pattern Identification)
-?
+|
 Risk Classification
-?
+|
 Explainability Layer
-?
+|
 Teacher Strategy Recommendation
-?
+|
 Interactive Dashboard (Streamlit)
 
 ## Business Feasibility
@@ -86,7 +86,7 @@ It can operate as a decision-support system to improve student engagement and re
 - Integrated risk prediction logic
 - Added student-level interactive insights
 
-## Day 8 Progress
+## Day 8 Progress - Streamlit Dashboard Updated
 
 - Dashboard refined for cleaner demo and submission readiness
 - Class summary metrics highlighted for faster judge interpretation
