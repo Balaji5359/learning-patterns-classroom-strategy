@@ -113,4 +113,16 @@ Deployment Details:
 - Port 8501 exposed via Security Group
 
 The system is now publicly accessible and cloud-hosted.
+## Production Deployment
+
+The dashboard is deployed on AWS EC2 with a custom subdomain.
+
+Live URL:
+http://praxisproject.skillrouteai.com
+
+Deployment Stack:
+- AWS EC2 (Ubuntu)
+- Nginx reverse proxy
+- Streamlit application
+- systemd auto-start service
 
