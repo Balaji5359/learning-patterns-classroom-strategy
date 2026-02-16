@@ -113,7 +113,7 @@ Deployment Details:
 - Port 8501 exposed via Security Group
 
 The system is now publicly accessible and cloud-hosted.
-## Production Deployment
+## Day 10 Progress - Production Deployment
 
 The dashboard is deployed on AWS EC2 with a custom subdomain.
 
