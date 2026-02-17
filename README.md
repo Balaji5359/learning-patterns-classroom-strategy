@@ -133,3 +133,12 @@ Deployment Stack:
 - Enforced secure production access over HTTPS
 - Updated public deployment URL to secure endpoint
 
+## Day 11 - GenAI Teacher Feedback Integration
+
+- Integrated Amazon Nova GenAI feedback through Bedrock Agent API
+- Connected Streamlit UI button workflow to GenAI feedback endpoint
+- Preserved ML outputs (cluster + risk) and added AI as advisory explanation layer
+
+API Endpoint:
+https://nrkg7cmta3.execute-api.ap-south-1.amazonaws.com/dev/praxishackthon-agent-api
+
