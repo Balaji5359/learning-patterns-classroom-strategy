@@ -118,11 +118,18 @@ The system is now publicly accessible and cloud-hosted.
 The dashboard is deployed on AWS EC2 with a custom subdomain.
 
 Live URL:
-http://praxisproject.skillrouteai.com
+https://praxisproject.skillrouteai.com
 
 Deployment Stack:
 - AWS EC2 (Ubuntu)
 - Nginx reverse proxy
 - Streamlit application
 - systemd auto-start service
+
+## Day 11 - HTTPS & Security
+
+- Enabled HTTPS with Let's Encrypt SSL certificate
+- Configured certbot for automatic renewal
+- Enforced secure production access over HTTPS
+- Updated public deployment URL to secure endpoint
 
