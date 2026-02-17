@@ -139,6 +139,15 @@ Deployment Stack:
 - Connected Streamlit UI button workflow to GenAI feedback endpoint
 - Preserved ML outputs (cluster + risk) and added AI as advisory explanation layer
 
-API Endpoint:
-https://nrkg7cmta3.execute-api.ap-south-1.amazonaws.com/dev/praxishackthon-agent-api
+
+## GenAI + ML Architecture
+
+Student Features -> ML Pipeline (Risk + Cluster) -> Rule-Based Recommendation -> GenAI Teacher Feedback (Advisory)
+
+## Ethics for AI-Assisted Feedback
+
+- GenAI feedback is assistive and non-decisional
+- ML outputs remain visible and are not replaced by AI text
+- Final classroom interventions require teacher judgment and oversight
+- Explanations should be reviewed with student context before action
 
